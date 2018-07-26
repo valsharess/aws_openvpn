@@ -1,0 +1,8 @@
+---
+
+- name: Install OpenVpn
+  become: true
+  yum: 
+     name: openvpn
+     enablerepo: epel
+     state: present
